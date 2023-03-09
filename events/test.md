@@ -18,6 +18,7 @@ past_event_video_link: ss
 crm_tag: sss
 webinar_link: sss
 event_email_title: sss
+event_background_image: 'https://assets.tina.io/221e11dc-5289-4db7-8bee-0ed713e0bab5/Kubernetes.svg'
 ---
 
 test
