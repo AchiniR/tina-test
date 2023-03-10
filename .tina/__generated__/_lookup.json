@@ -1,1 +1,119 @@
-{"DocumentConnection":{"type":"DocumentConnection","resolveType":"multiCollectionDocumentList","collections":["request_demo","solutions","events","services_solutions","randoli_policies","case_studies","jobs"]},"Node":{"type":"Node","resolveType":"nodeDocument"},"DocumentNode":{"type":"DocumentNode","resolveType":"multiCollectionDocument","createDocument":"create","updateDocument":"update"},"Events":{"type":"Events","resolveType":"collectionDocument","collection":"events","createEvents":"create","updateEvents":"update"},"EventsConnection":{"type":"EventsConnection","resolveType":"collectionDocumentList","collection":"events"},"Jobs":{"type":"Jobs","resolveType":"collectionDocument","collection":"jobs","createJobs":"create","updateJobs":"update"},"JobsConnection":{"type":"JobsConnection","resolveType":"collectionDocumentList","collection":"jobs"},"Request_demo":{"type":"Request_demo","resolveType":"collectionDocument","collection":"request_demo","createRequest_demo":"create","updateRequest_demo":"update"},"Request_demoConnection":{"type":"Request_demoConnection","resolveType":"collectionDocumentList","collection":"request_demo"},"Solutions":{"type":"Solutions","resolveType":"collectionDocument","collection":"solutions","createSolutions":"create","updateSolutions":"update"},"SolutionsConnection":{"type":"SolutionsConnection","resolveType":"collectionDocumentList","collection":"solutions"},"Services_solutions":{"type":"Services_solutions","resolveType":"collectionDocument","collection":"services_solutions","createServices_solutions":"create","updateServices_solutions":"update"},"Services_solutionsConnection":{"type":"Services_solutionsConnection","resolveType":"collectionDocumentList","collection":"services_solutions"},"Randoli_policies":{"type":"Randoli_policies","resolveType":"collectionDocument","collection":"randoli_policies","createRandoli_policies":"create","updateRandoli_policies":"update"},"Randoli_policiesConnection":{"type":"Randoli_policiesConnection","resolveType":"collectionDocumentList","collection":"randoli_policies"},"Case_studies":{"type":"Case_studies","resolveType":"collectionDocument","collection":"case_studies","createCase_studies":"create","updateCase_studies":"update"},"Case_studiesConnection":{"type":"Case_studiesConnection","resolveType":"collectionDocumentList","collection":"case_studies"},"Articles":{"type":"Articles","resolveType":"collectionDocument","collection":"articles","createArticles":"create","updateArticles":"update"},"ArticlesConnection":{"type":"ArticlesConnection","resolveType":"collectionDocumentList","collection":"articles"}}
+{
+  "DocumentConnection": {
+    "type": "DocumentConnection",
+    "resolveType": "multiCollectionDocumentList",
+    "collections": [
+      "request_demo",
+      "solutions",
+      "events",
+      "services_solutions",
+      "randoli_policies",
+      "case_studies",
+      "jobs",
+      "contact_us"
+    ]
+  },
+  "Node": { "type": "Node", "resolveType": "nodeDocument" },
+  "DocumentNode": {
+    "type": "DocumentNode",
+    "resolveType": "multiCollectionDocument",
+    "createDocument": "create",
+    "updateDocument": "update"
+  },
+  "Request_demo": {
+    "type": "Request_demo",
+    "resolveType": "collectionDocument",
+    "collection": "request_demo",
+    "createRequest_demo": "create",
+    "updateRequest_demo": "update"
+  },
+  "Request_demoConnection": {
+    "type": "Request_demoConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "request_demo"
+  },
+  "Solutions": {
+    "type": "Solutions",
+    "resolveType": "collectionDocument",
+    "collection": "solutions",
+    "createSolutions": "create",
+    "updateSolutions": "update"
+  },
+  "SolutionsConnection": {
+    "type": "SolutionsConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "solutions"
+  },
+  "Events": {
+    "type": "Events",
+    "resolveType": "collectionDocument",
+    "collection": "events",
+    "createEvents": "create",
+    "updateEvents": "update"
+  },
+  "EventsConnection": {
+    "type": "EventsConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "events"
+  },
+  "Services_solutions": {
+    "type": "Services_solutions",
+    "resolveType": "collectionDocument",
+    "collection": "services_solutions",
+    "createServices_solutions": "create",
+    "updateServices_solutions": "update"
+  },
+  "Services_solutionsConnection": {
+    "type": "Services_solutionsConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "services_solutions"
+  },
+  "Randoli_policies": {
+    "type": "Randoli_policies",
+    "resolveType": "collectionDocument",
+    "collection": "randoli_policies",
+    "createRandoli_policies": "create",
+    "updateRandoli_policies": "update"
+  },
+  "Randoli_policiesConnection": {
+    "type": "Randoli_policiesConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "randoli_policies"
+  },
+  "Case_studies": {
+    "type": "Case_studies",
+    "resolveType": "collectionDocument",
+    "collection": "case_studies",
+    "createCase_studies": "create",
+    "updateCase_studies": "update"
+  },
+  "Case_studiesConnection": {
+    "type": "Case_studiesConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "case_studies"
+  },
+  "Jobs": {
+    "type": "Jobs",
+    "resolveType": "collectionDocument",
+    "collection": "jobs",
+    "createJobs": "create",
+    "updateJobs": "update"
+  },
+  "JobsConnection": {
+    "type": "JobsConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "jobs"
+  },
+  "Contact_us": {
+    "type": "Contact_us",
+    "resolveType": "collectionDocument",
+    "collection": "contact_us",
+    "createContact_us": "create",
+    "updateContact_us": "update"
+  },
+  "Contact_usConnection": {
+    "type": "Contact_usConnection",
+    "resolveType": "collectionDocumentList",
+    "collection": "contact_us"
+  }
+}
