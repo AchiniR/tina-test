@@ -735,6 +735,6 @@
     }
   ],
   "config": {
-    "media": { "tina": { "publicFolder": "static", "mediaRoot": "uploads" } }
+    "media": { "tina": { "publicFolder": "static", "mediaRoot": "images" } }
   }
 }
