@@ -8,6 +8,486 @@
   "meta": { "flags": ["experimentalData", "isomorphicGitBridge"] },
   "collections": [
     {
+      "label": "Home",
+      "name": "Home",
+      "path": "home",
+      "format": "md",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "title",
+          "namespace": ["Home", "title"]
+        },
+        {
+          "type": "string",
+          "name": "home_page_description",
+          "label": "home_page_description",
+          "namespace": ["Home", "home_page_description"]
+        },
+        {
+          "type": "rich-text",
+          "name": "home_page_heading",
+          "label": "home_page_heading",
+          "namespace": ["Home", "home_page_heading"]
+        },
+        {
+          "type": "string",
+          "name": "home_page_video_link",
+          "label": "home_page_video_link",
+          "namespace": ["Home", "home_page_video_link"]
+        },
+        {
+          "type": "image",
+          "name": "home_page_video_cover_image",
+          "label": "home_page_video_cover_image",
+          "namespace": ["Home", "home_page_video_cover_image"]
+        },
+        {
+          "type": "object",
+          "name": "app_director",
+          "label": "app_director",
+          "fields": [
+            {
+              "type": "string",
+              "name": "heading",
+              "label": "heading",
+              "namespace": ["Home", "app_director", "heading"]
+            },
+            {
+              "type": "string",
+              "name": "description",
+              "label": "description",
+              "namespace": ["Home", "app_director", "description"]
+            },
+            {
+              "type": "object",
+              "name": "benefits",
+              "label": "benefits",
+              "list": true,
+              "fields": [
+                {
+                  "type": "string",
+                  "name": "heading",
+                  "label": "heading",
+                  "namespace": ["Home", "app_director", "benefits", "heading"]
+                },
+                {
+                  "type": "string",
+                  "name": "content",
+                  "label": "content",
+                  "namespace": ["Home", "app_director", "benefits", "content"]
+                },
+                {
+                  "type": "image",
+                  "name": "icon",
+                  "label": "content",
+                  "namespace": ["Home", "app_director", "benefits", "icon"]
+                }
+              ],
+              "namespace": ["Home", "app_director", "benefits"]
+            },
+            {
+              "type": "string",
+              "name": "button_text",
+              "label": "button_text",
+              "namespace": ["Home", "app_director", "button_text"]
+            },
+            {
+              "type": "string",
+              "name": "button_link",
+              "label": "button_link",
+              "namespace": ["Home", "app_director", "button_link"]
+            }
+          ],
+          "namespace": ["Home", "app_director"]
+        },
+        {
+          "type": "object",
+          "name": "service",
+          "label": "service",
+          "fields": [
+            {
+              "type": "string",
+              "name": "heading",
+              "label": "heading",
+              "namespace": ["Home", "service", "heading"]
+            },
+            {
+              "type": "string",
+              "name": "description",
+              "label": "description",
+              "namespace": ["Home", "service", "description"]
+            },
+            {
+              "type": "object",
+              "name": "services",
+              "label": "services",
+              "list": true,
+              "fields": [
+                {
+                  "type": "string",
+                  "name": "heading",
+                  "label": "heading",
+                  "namespace": ["Home", "service", "services", "heading"]
+                },
+                {
+                  "type": "image",
+                  "name": "image",
+                  "label": "image",
+                  "namespace": ["Home", "service", "services", "image"]
+                },
+                {
+                  "type": "string",
+                  "name": "content",
+                  "label": "content",
+                  "namespace": ["Home", "service", "services", "content"]
+                }
+              ],
+              "namespace": ["Home", "service", "services"]
+            },
+            {
+              "type": "string",
+              "name": "button_text",
+              "label": "button_text",
+              "namespace": ["Home", "service", "button_text"]
+            },
+            {
+              "type": "string",
+              "name": "button_link",
+              "label": "button_link",
+              "namespace": ["Home", "service", "button_link"]
+            }
+          ],
+          "namespace": ["Home", "service"]
+        },
+        {
+          "type": "object",
+          "name": "cloud_partner",
+          "label": "cloud_partner",
+          "fields": [
+            {
+              "type": "string",
+              "name": "heading",
+              "label": "heading",
+              "namespace": ["Home", "cloud_partner", "heading"]
+            },
+            {
+              "type": "object",
+              "name": "row",
+              "label": "row",
+              "fields": [
+                {
+                  "type": "object",
+                  "name": "partners_logo",
+                  "label": "partners_logo",
+                  "list": true,
+                  "fields": [
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "label": "name",
+                      "namespace": [
+                        "Home",
+                        "cloud_partner",
+                        "row",
+                        "partners_logo",
+                        "name"
+                      ]
+                    },
+                    {
+                      "type": "image",
+                      "name": "image",
+                      "label": "image",
+                      "namespace": [
+                        "Home",
+                        "cloud_partner",
+                        "row",
+                        "partners_logo",
+                        "image"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "name": "tooltip_text",
+                      "label": "tooltip_text",
+                      "namespace": [
+                        "Home",
+                        "cloud_partner",
+                        "row",
+                        "partners_logo",
+                        "tooltip_text"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "name": "tooltip_link",
+                      "label": "tooltip_link",
+                      "namespace": [
+                        "Home",
+                        "cloud_partner",
+                        "row",
+                        "partners_logo",
+                        "tooltip_link"
+                      ]
+                    }
+                  ],
+                  "namespace": ["Home", "cloud_partner", "row", "partners_logo"]
+                }
+              ],
+              "namespace": ["Home", "cloud_partner", "row"]
+            }
+          ],
+          "namespace": ["Home", "cloud_partner"]
+        },
+        {
+          "type": "object",
+          "name": "technology_partner",
+          "label": "technology_partner",
+          "fields": [
+            {
+              "type": "string",
+              "name": "heading",
+              "label": "heading",
+              "namespace": ["Home", "technology_partner", "heading"]
+            },
+            {
+              "type": "object",
+              "name": "row",
+              "label": "row",
+              "fields": [
+                {
+                  "type": "object",
+                  "name": "partners_logo",
+                  "label": "partners_logo",
+                  "list": true,
+                  "fields": [
+                    {
+                      "type": "string",
+                      "name": "name",
+                      "label": "name",
+                      "namespace": [
+                        "Home",
+                        "technology_partner",
+                        "row",
+                        "partners_logo",
+                        "name"
+                      ]
+                    },
+                    {
+                      "type": "image",
+                      "name": "image",
+                      "label": "image",
+                      "namespace": [
+                        "Home",
+                        "technology_partner",
+                        "row",
+                        "partners_logo",
+                        "image"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "name": "tooltip_text",
+                      "label": "tooltip_text",
+                      "namespace": [
+                        "Home",
+                        "technology_partner",
+                        "row",
+                        "partners_logo",
+                        "tooltip_text"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "name": "tooltip_link",
+                      "label": "tooltip_link",
+                      "namespace": [
+                        "Home",
+                        "technology_partner",
+                        "row",
+                        "partners_logo",
+                        "tooltip_link"
+                      ]
+                    }
+                  ],
+                  "namespace": [
+                    "Home",
+                    "technology_partner",
+                    "row",
+                    "partners_logo"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "row",
+                  "label": "row",
+                  "namespace": ["Home", "technology_partner", "row", "row"]
+                }
+              ],
+              "namespace": ["Home", "technology_partner", "row"]
+            }
+          ],
+          "namespace": ["Home", "technology_partner"]
+        },
+        {
+          "type": "object",
+          "name": "static_logo_section",
+          "label": "static_logo_section",
+          "list": true,
+          "fields": [
+            {
+              "type": "string",
+              "name": "name",
+              "label": "name",
+              "namespace": ["Home", "static_logo_section", "name"]
+            },
+            {
+              "type": "image",
+              "name": "image",
+              "label": "image",
+              "namespace": ["Home", "static_logo_section", "image"]
+            }
+          ],
+          "namespace": ["Home", "static_logo_section"]
+        }
+      ],
+      "ui": {},
+      "namespace": ["Home"]
+    },
+    {
+      "label": "About",
+      "name": "about",
+      "path": "about",
+      "format": "md",
+      "fields": [
+        {
+          "type": "object",
+          "name": "about_advisors",
+          "label": "about_advisors",
+          "list": true,
+          "fields": [
+            {
+              "type": "string",
+              "name": "description",
+              "label": "description",
+              "namespace": ["about", "about_advisors", "description"]
+            },
+            {
+              "type": "string",
+              "name": "designation",
+              "label": "designation",
+              "namespace": ["about", "about_advisors", "designation"]
+            },
+            {
+              "type": "image",
+              "name": "image",
+              "label": "image",
+              "namespace": ["about", "about_advisors", "image"]
+            },
+            {
+              "type": "string",
+              "name": "name",
+              "label": "name",
+              "namespace": ["about", "about_advisors", "name"]
+            }
+          ],
+          "namespace": ["about", "about_advisors"]
+        },
+        {
+          "type": "object",
+          "name": "about_img_content_section",
+          "label": "about_img_content_section",
+          "list": true,
+          "fields": [
+            {
+              "type": "string",
+              "name": "background_color",
+              "label": "background color",
+              "namespace": [
+                "about",
+                "about_img_content_section",
+                "background_color"
+              ]
+            },
+            {
+              "type": "string",
+              "name": "content",
+              "label": "Content",
+              "ui": { "component": "textarea" },
+              "namespace": ["about", "about_img_content_section", "content"]
+            },
+            {
+              "type": "image",
+              "name": "image",
+              "label": "image",
+              "namespace": ["about", "about_img_content_section", "image"]
+            },
+            {
+              "type": "string",
+              "name": "title",
+              "label": "title",
+              "namespace": ["about", "about_img_content_section", "title"]
+            },
+            {
+              "type": "string",
+              "name": "video_link",
+              "label": "video link",
+              "namespace": ["about", "about_img_content_section", "video_link"]
+            }
+          ],
+          "namespace": ["about", "about_img_content_section"]
+        },
+        {
+          "type": "object",
+          "name": "about_leaders",
+          "label": "about_leaders",
+          "list": true,
+          "fields": [
+            {
+              "type": "string",
+              "name": "description",
+              "label": "description",
+              "namespace": ["about", "about_leaders", "description"]
+            },
+            {
+              "type": "string",
+              "name": "designation",
+              "label": "designation",
+              "namespace": ["about", "about_leaders", "designation"]
+            },
+            {
+              "type": "image",
+              "name": "image",
+              "label": "image",
+              "namespace": ["about", "about_leaders", "image"]
+            },
+            {
+              "type": "string",
+              "name": "name",
+              "label": "name",
+              "namespace": ["about", "about_leaders", "name"]
+            },
+            {
+              "type": "string",
+              "name": "position",
+              "label": "position",
+              "namespace": ["about", "about_leaders", "position"]
+            }
+          ],
+          "namespace": ["about", "about_leaders"]
+        },
+        {
+          "type": "string",
+          "name": "about_page_title",
+          "label": "about_page_title",
+          "namespace": ["about", "about_page_title"]
+        }
+      ],
+      "ui": {},
+      "namespace": ["about"]
+    },
+    {
       "label": "Request Demo",
       "name": "request_demo",
       "path": "request-demo",
@@ -46,6 +526,207 @@
       ],
       "ui": {},
       "namespace": ["request_demo"]
+    },
+    {
+      "label": "Signup Trial",
+      "name": "signup_trial",
+      "path": "signup-trial",
+      "format": "md",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "title",
+          "namespace": ["signup_trial", "title"]
+        },
+        {
+          "type": "string",
+          "name": "signup_trial_heading",
+          "label": "signup_trial_heading",
+          "namespace": ["signup_trial", "signup_trial_heading"]
+        },
+        {
+          "type": "string",
+          "name": "signup_trial_description",
+          "label": "signup_trial_description",
+          "namespace": ["signup_trial", "signup_trial_description"]
+        },
+        {
+          "type": "string",
+          "name": "signup_trial_crm_tag",
+          "label": "signup_trial_crm_tag",
+          "namespace": ["signup_trial", "signup_trial_crm_tag"]
+        },
+        {
+          "type": "string",
+          "name": "signup_trial_crm_product",
+          "label": "signup_trial_crm_product",
+          "namespace": ["signup_trial", "signup_trial_crm_product"]
+        }
+      ],
+      "ui": {},
+      "namespace": ["signup_trial"]
+    },
+    {
+      "label": "Pricing",
+      "name": "pricing",
+      "path": "pricing",
+      "format": "md",
+      "fields": [
+        {
+          "type": "object",
+          "name": "pricing_main_row",
+          "label": "pricing_main_row",
+          "list": true,
+          "fields": [
+            {
+              "type": "string",
+              "name": "row_title",
+              "label": "row_title",
+              "namespace": ["pricing", "pricing_main_row", "row_title"]
+            },
+            {
+              "type": "string",
+              "name": "row_title_free",
+              "label": "row_title_free",
+              "namespace": ["pricing", "pricing_main_row", "row_title_free"]
+            },
+            {
+              "type": "string",
+              "name": "row_title_enterprise",
+              "label": "row_title_enterprise",
+              "namespace": [
+                "pricing",
+                "pricing_main_row",
+                "row_title_enterprise"
+              ]
+            },
+            {
+              "type": "string",
+              "name": "row_title_essential",
+              "label": "row_title_essential",
+              "namespace": [
+                "pricing",
+                "pricing_main_row",
+                "row_title_essential"
+              ]
+            },
+            {
+              "type": "object",
+              "name": "pricing_row_data",
+              "label": "pricing_row_data",
+              "list": true,
+              "fields": [
+                {
+                  "type": "string",
+                  "name": "enterprise",
+                  "label": "enterprise",
+                  "namespace": [
+                    "pricing",
+                    "pricing_main_row",
+                    "pricing_row_data",
+                    "enterprise"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "feature",
+                  "label": "feature",
+                  "namespace": [
+                    "pricing",
+                    "pricing_main_row",
+                    "pricing_row_data",
+                    "feature"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "free",
+                  "label": "free",
+                  "namespace": [
+                    "pricing",
+                    "pricing_main_row",
+                    "pricing_row_data",
+                    "free"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "essential",
+                  "label": "essential",
+                  "namespace": [
+                    "pricing",
+                    "pricing_main_row",
+                    "pricing_row_data",
+                    "essential"
+                  ]
+                }
+              ],
+              "namespace": ["pricing", "pricing_main_row", "pricing_row_data"]
+            },
+            {
+              "type": "object",
+              "name": "pricing_row_data_icons",
+              "label": "pricing_row_data_icons",
+              "list": true,
+              "fields": [
+                {
+                  "type": "string",
+                  "name": "enterprise",
+                  "label": "enterprise",
+                  "namespace": [
+                    "pricing",
+                    "pricing_main_row",
+                    "pricing_row_data_icons",
+                    "enterprise"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "feature",
+                  "label": "feature",
+                  "namespace": [
+                    "pricing",
+                    "pricing_main_row",
+                    "pricing_row_data_icons",
+                    "feature"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "free",
+                  "label": "free",
+                  "namespace": [
+                    "pricing",
+                    "pricing_main_row",
+                    "pricing_row_data_icons",
+                    "free"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "essential",
+                  "label": "essential",
+                  "namespace": [
+                    "pricing",
+                    "pricing_main_row",
+                    "pricing_row_data_icons",
+                    "essential"
+                  ]
+                }
+              ],
+              "namespace": [
+                "pricing",
+                "pricing_main_row",
+                "pricing_row_data_icons"
+              ]
+            }
+          ],
+          "namespace": ["pricing", "pricing_main_row"]
+        }
+      ],
+      "ui": {},
+      "namespace": ["pricing"]
     },
     {
       "label": "Solutions",
@@ -732,6 +1413,882 @@
       ],
       "ui": {},
       "namespace": ["contact_us"]
+    },
+    {
+      "label": "Partner",
+      "name": "Partner",
+      "path": "partner",
+      "format": "md",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "title",
+          "namespace": ["Partner", "title"]
+        },
+        {
+          "type": "rich-text",
+          "name": "partner_page_heading",
+          "label": "partner_page_heading",
+          "namespace": ["Partner", "partner_page_heading"]
+        },
+        {
+          "type": "string",
+          "name": "partner_page_description",
+          "label": "partner_page_description",
+          "namespace": ["Partner", "partner_page_description"]
+        },
+        {
+          "type": "object",
+          "name": "partner_img_content_section",
+          "label": "partner_img_content_section",
+          "list": true,
+          "fields": [
+            {
+              "type": "string",
+              "name": "title",
+              "label": "title",
+              "namespace": ["Partner", "partner_img_content_section", "title"]
+            },
+            {
+              "type": "string",
+              "name": "video_link",
+              "label": "video_link",
+              "namespace": [
+                "Partner",
+                "partner_img_content_section",
+                "video_link"
+              ]
+            },
+            {
+              "type": "string",
+              "name": "content",
+              "label": "content",
+              "ui": { "component": "textarea" },
+              "namespace": ["Partner", "partner_img_content_section", "content"]
+            },
+            {
+              "type": "string",
+              "name": "background_color",
+              "label": "background_color",
+              "namespace": [
+                "Partner",
+                "partner_img_content_section",
+                "background_color"
+              ]
+            },
+            {
+              "type": "image",
+              "name": "image",
+              "label": "image",
+              "namespace": ["Partner", "partner_img_content_section", "image"]
+            }
+          ],
+          "namespace": ["Partner", "partner_img_content_section"]
+        },
+        {
+          "type": "object",
+          "name": "partners_section",
+          "label": "partners_section",
+          "fields": [
+            {
+              "type": "string",
+              "name": "heading",
+              "label": "heading",
+              "namespace": ["Partner", "partners_section", "heading"]
+            },
+            {
+              "type": "string",
+              "label": "partners",
+              "name": "partners",
+              "list": true,
+              "namespace": ["Partner", "partners_section", "partners"]
+            }
+          ],
+          "namespace": ["Partner", "partners_section"]
+        }
+      ],
+      "ui": {},
+      "namespace": ["Partner"]
+    },
+    {
+      "label": "Service",
+      "name": "service",
+      "path": "services",
+      "format": "md",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "title",
+          "namespace": ["service", "title"]
+        },
+        {
+          "type": "string",
+          "name": "services_heading",
+          "label": "services_heading",
+          "namespace": ["service", "services_heading"]
+        },
+        {
+          "type": "string",
+          "name": "services_sub_heading",
+          "label": "services_sub_heading",
+          "namespace": ["service", "services_sub_heading"]
+        },
+        {
+          "type": "object",
+          "name": "services_image_content",
+          "label": "services_image_content",
+          "fields": [
+            {
+              "type": "image",
+              "name": "image",
+              "label": "image",
+              "namespace": ["service", "services_image_content", "image"]
+            },
+            {
+              "type": "string",
+              "label": "heading",
+              "name": "heading",
+              "namespace": ["service", "services_image_content", "heading"]
+            },
+            {
+              "type": "string",
+              "name": "content",
+              "label": "content",
+              "ui": { "component": "textarea" },
+              "namespace": ["service", "services_image_content", "content"]
+            },
+            {
+              "type": "string",
+              "label": "video_link",
+              "name": "video_link",
+              "namespace": ["service", "services_image_content", "video_link"]
+            },
+            {
+              "type": "string",
+              "label": "background_color",
+              "name": "background_color",
+              "namespace": [
+                "service",
+                "services_image_content",
+                "background_color"
+              ]
+            }
+          ],
+          "namespace": ["service", "services_image_content"]
+        },
+        {
+          "type": "string",
+          "name": "service_page_heading",
+          "label": "service_page_heading",
+          "namespace": ["service", "service_page_heading"]
+        },
+        {
+          "type": "string",
+          "name": "service_page_description",
+          "label": "service_page_description",
+          "namespace": ["service", "service_page_description"]
+        },
+        {
+          "type": "string",
+          "name": "service_page_video_link",
+          "label": "service_page_video_link",
+          "namespace": ["service", "service_page_video_link"]
+        },
+        {
+          "type": "image",
+          "name": "service_page_video_cover_image",
+          "label": "service_page_video_cover_image",
+          "namespace": ["service", "service_page_video_cover_image"]
+        },
+        {
+          "type": "string",
+          "name": "service_page_button_text",
+          "label": "service_page_button_text",
+          "namespace": ["service", "service_page_button_text"]
+        },
+        {
+          "type": "object",
+          "name": "customer_reviews",
+          "label": "customer_reviews",
+          "list": true,
+          "fields": [
+            {
+              "type": "string",
+              "name": "customer_name",
+              "label": "customer_name",
+              "namespace": ["service", "customer_reviews", "customer_name"]
+            },
+            {
+              "type": "string",
+              "label": "designation",
+              "name": "designation",
+              "namespace": ["service", "customer_reviews", "designation"]
+            },
+            {
+              "type": "string",
+              "name": "comment",
+              "label": "comment",
+              "namespace": ["service", "customer_reviews", "comment"]
+            },
+            {
+              "type": "string",
+              "label": "organization_name",
+              "name": "organization_name",
+              "namespace": ["service", "customer_reviews", "organization_name"]
+            },
+            {
+              "type": "image",
+              "label": "organization_logo",
+              "name": "organization_logo",
+              "namespace": ["service", "customer_reviews", "organization_logo"]
+            },
+            {
+              "type": "string",
+              "label": "link",
+              "name": "link",
+              "namespace": ["service", "customer_reviews", "link"]
+            }
+          ],
+          "namespace": ["service", "customer_reviews"]
+        },
+        {
+          "type": "object",
+          "name": "service_img_content_section",
+          "label": "service_img_content_section",
+          "list": true,
+          "fields": [
+            {
+              "type": "string",
+              "name": "title",
+              "label": "title",
+              "namespace": ["service", "service_img_content_section", "title"]
+            },
+            {
+              "type": "image",
+              "label": "image",
+              "name": "image",
+              "namespace": ["service", "service_img_content_section", "image"]
+            },
+            {
+              "type": "string",
+              "name": "video_link",
+              "label": "video_link",
+              "namespace": [
+                "service",
+                "service_img_content_section",
+                "video_link"
+              ]
+            },
+            {
+              "type": "string",
+              "label": "content",
+              "name": "content",
+              "ui": { "component": "textarea" },
+              "namespace": ["service", "service_img_content_section", "content"]
+            },
+            {
+              "type": "string",
+              "label": "background_color",
+              "name": "background_color",
+              "namespace": [
+                "service",
+                "service_img_content_section",
+                "background_color"
+              ]
+            }
+          ],
+          "namespace": ["service", "service_img_content_section"]
+        },
+        {
+          "type": "object",
+          "name": "solution",
+          "label": "solution",
+          "fields": [
+            {
+              "type": "string",
+              "name": "heading",
+              "label": "heading",
+              "namespace": ["service", "solution", "heading"]
+            },
+            {
+              "type": "string",
+              "label": "content",
+              "name": "content",
+              "ui": { "component": "textarea" },
+              "namespace": ["service", "solution", "content"]
+            },
+            {
+              "type": "object",
+              "name": "solutions",
+              "label": "solutions",
+              "list": true,
+              "fields": [
+                {
+                  "type": "string",
+                  "name": "heading",
+                  "label": "heading",
+                  "namespace": ["service", "solution", "solutions", "heading"]
+                },
+                {
+                  "type": "string",
+                  "label": "content",
+                  "name": "content",
+                  "ui": { "component": "textarea" },
+                  "namespace": ["service", "solution", "solutions", "content"]
+                },
+                {
+                  "type": "string",
+                  "name": "image",
+                  "label": "image",
+                  "namespace": ["service", "solution", "solutions", "image"]
+                },
+                {
+                  "type": "string",
+                  "name": "button_text",
+                  "label": "button_text",
+                  "namespace": [
+                    "service",
+                    "solution",
+                    "solutions",
+                    "button_text"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "button_link",
+                  "label": "button_link",
+                  "namespace": [
+                    "service",
+                    "solution",
+                    "solutions",
+                    "button_link"
+                  ]
+                }
+              ],
+              "namespace": ["service", "solution", "solutions"]
+            }
+          ],
+          "namespace": ["service", "solution"]
+        },
+        {
+          "type": "object",
+          "name": "case_study_section",
+          "label": "case_study_section",
+          "fields": [
+            {
+              "type": "image",
+              "name": "image",
+              "label": "image",
+              "namespace": ["service", "case_study_section", "image"]
+            },
+            {
+              "type": "string",
+              "label": "content",
+              "name": "content",
+              "ui": { "component": "textarea" },
+              "namespace": ["service", "case_study_section", "content"]
+            },
+            {
+              "type": "string",
+              "name": "button_text",
+              "label": "button_text",
+              "namespace": ["service", "case_study_section", "button_text"]
+            },
+            {
+              "type": "string",
+              "name": "button_link",
+              "label": "button_link",
+              "namespace": ["service", "case_study_section", "button_link"]
+            }
+          ],
+          "namespace": ["service", "case_study_section"]
+        }
+      ],
+      "ui": {},
+      "namespace": ["service"]
+    },
+    {
+      "label": "signup partners",
+      "name": "signup_partners",
+      "path": "signup-partners",
+      "format": "md",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "title",
+          "namespace": ["signup_partners", "title"]
+        },
+        {
+          "type": "string",
+          "name": "signup_partners_crm_tag",
+          "label": "signup_partners_crm_tag",
+          "namespace": ["signup_partners", "signup_partners_crm_tag"]
+        },
+        {
+          "type": "string",
+          "name": "signup_partners_crm_product",
+          "label": "signup_partners_crm_product",
+          "namespace": ["signup_partners", "signup_partners_crm_product"]
+        },
+        {
+          "type": "string",
+          "name": "signup_partners_heading",
+          "label": "signup_partners_heading",
+          "namespace": ["signup_partners", "signup_partners_heading"]
+        },
+        {
+          "type": "string",
+          "name": "signup_partners_description",
+          "label": "signup_partners_description",
+          "namespace": ["signup_partners", "signup_partners_description"]
+        }
+      ],
+      "ui": {},
+      "namespace": ["signup_partners"]
+    },
+    {
+      "label": "Overview",
+      "name": "overview",
+      "path": "overview",
+      "format": "md",
+      "fields": [
+        {
+          "type": "string",
+          "name": "title",
+          "label": "title",
+          "namespace": ["overview", "title"]
+        },
+        {
+          "type": "string",
+          "name": "overview_heading1",
+          "label": "overview_heading1",
+          "namespace": ["overview", "overview_heading1"]
+        },
+        {
+          "type": "string",
+          "name": "overview_content1",
+          "label": "overview_content1",
+          "ui": { "component": "textarea" },
+          "namespace": ["overview", "overview_content1"]
+        },
+        {
+          "type": "string",
+          "name": "overview_features",
+          "label": "overview_features",
+          "namespace": ["overview", "overview_features"]
+        },
+        {
+          "type": "image",
+          "name": "overview_video1_thumbnail",
+          "label": "overview_video1_thumbnail",
+          "namespace": ["overview", "overview_video1_thumbnail"]
+        },
+        {
+          "type": "string",
+          "name": "overview_content2",
+          "label": "overview_content2",
+          "ui": { "component": "textarea" },
+          "namespace": ["overview", "overview_content2"]
+        },
+        {
+          "type": "string",
+          "name": "overview_heading2",
+          "label": "overview_heading2",
+          "namespace": ["overview", "overview_heading2"]
+        },
+        {
+          "type": "string",
+          "name": "overview_video_1_link",
+          "label": "overview_video_1_link",
+          "namespace": ["overview", "overview_video_1_link"]
+        },
+        {
+          "type": "image",
+          "name": "overview_video2_thumbnail",
+          "label": "overview_video2_thumbnail",
+          "namespace": ["overview", "overview_video2_thumbnail"]
+        },
+        {
+          "type": "string",
+          "name": "overview_video_2_link",
+          "label": "overview_video_2_link",
+          "namespace": ["overview", "overview_video_2_link"]
+        },
+        {
+          "type": "string",
+          "name": "overview_video_3_link",
+          "label": "overview_video_3_link",
+          "namespace": ["overview", "overview_video_3_link"]
+        },
+        {
+          "type": "string",
+          "name": "overview_heading3",
+          "label": "overview_heading3",
+          "namespace": ["overview", "overview_heading3"]
+        },
+        {
+          "type": "string",
+          "name": "overview_content3",
+          "label": "overview_content3",
+          "ui": { "component": "textarea" },
+          "namespace": ["overview", "overview_content3"]
+        },
+        {
+          "type": "string",
+          "name": "overview_heading4",
+          "label": "overview_heading4",
+          "namespace": ["overview", "overview_heading4"]
+        },
+        {
+          "type": "string",
+          "name": "overview_content4",
+          "label": "overview_content4",
+          "ui": { "component": "textarea" },
+          "namespace": ["overview", "overview_content4"]
+        },
+        {
+          "type": "image",
+          "name": "overview_heading3_image",
+          "label": "overview_heading3_image",
+          "namespace": ["overview", "overview_heading3_image"]
+        },
+        {
+          "type": "image",
+          "name": "overview_video3_thumbnail",
+          "label": "overview_video3_thumbnail",
+          "namespace": ["overview", "overview_video3_thumbnail"]
+        },
+        {
+          "type": "string",
+          "name": "overview_heading5",
+          "label": "overview_heading5",
+          "namespace": ["overview", "overview_heading5"]
+        },
+        {
+          "type": "string",
+          "name": "overview_content5",
+          "label": "overview_content5",
+          "ui": { "component": "textarea" },
+          "namespace": ["overview", "overview_content5"]
+        },
+        {
+          "type": "image",
+          "name": "overview_video_thumbnail_5",
+          "label": "overview_video_thumbnail_5",
+          "namespace": ["overview", "overview_video_thumbnail_5"]
+        },
+        {
+          "type": "string",
+          "name": "overview_video_link_5",
+          "label": "overview_video_link_5",
+          "namespace": ["overview", "overview_video_link_5"]
+        },
+        {
+          "type": "image",
+          "name": "overview_image4_thumbnail",
+          "label": "overview_image4_thumbnail",
+          "namespace": ["overview", "overview_image4_thumbnail"]
+        },
+        {
+          "type": "image",
+          "name": "overview_video4_thumbnail",
+          "label": "overview_video4_thumbnail",
+          "namespace": ["overview", "overview_video4_thumbnail"]
+        },
+        {
+          "type": "object",
+          "name": "app_director_image_content_section",
+          "label": "app-director-image-content-section",
+          "list": true,
+          "fields": [
+            {
+              "type": "string",
+              "name": "title",
+              "label": "title",
+              "namespace": [
+                "overview",
+                "app_director_image_content_section",
+                "title"
+              ]
+            },
+            {
+              "type": "string",
+              "name": "content",
+              "label": "content",
+              "ui": { "component": "textarea" },
+              "namespace": [
+                "overview",
+                "app_director_image_content_section",
+                "content"
+              ]
+            },
+            {
+              "type": "image",
+              "name": "image",
+              "label": "image",
+              "namespace": [
+                "overview",
+                "app_director_image_content_section",
+                "image"
+              ]
+            },
+            {
+              "type": "string",
+              "name": "video_link",
+              "label": "video_link",
+              "namespace": [
+                "overview",
+                "app_director_image_content_section",
+                "video_link"
+              ]
+            },
+            {
+              "type": "string",
+              "name": "background_color",
+              "label": "background_color",
+              "namespace": [
+                "overview",
+                "app_director_image_content_section",
+                "background_color"
+              ]
+            }
+          ],
+          "namespace": ["overview", "app_director_image_content_section"]
+        },
+        {
+          "type": "object",
+          "name": "core_features",
+          "label": "core_features",
+          "list": true,
+          "fields": [
+            {
+              "type": "image",
+              "name": "icon",
+              "label": "icon",
+              "namespace": ["overview", "core_features", "icon"]
+            },
+            {
+              "type": "string",
+              "name": "title",
+              "label": "title",
+              "namespace": ["overview", "core_features", "title"]
+            },
+            {
+              "type": "string",
+              "name": "details",
+              "label": "details",
+              "namespace": ["overview", "core_features", "details"]
+            },
+            {
+              "type": "string",
+              "name": "description",
+              "label": "description",
+              "namespace": ["overview", "core_features", "description"]
+            }
+          ],
+          "namespace": ["overview", "core_features"]
+        },
+        {
+          "type": "string",
+          "name": "app_director_overview_heading",
+          "label": "app_director_overview_heading",
+          "namespace": ["overview", "app_director_overview_heading"]
+        },
+        {
+          "type": "string",
+          "name": "app_director_overview_description",
+          "label": "app_director_overview_description",
+          "namespace": ["overview", "app_director_overview_description"]
+        },
+        {
+          "type": "string",
+          "name": "app_director_overview_video_link",
+          "label": "app_director_overview_video_link",
+          "namespace": ["overview", "app_director_overview_video_link"]
+        },
+        {
+          "type": "image",
+          "name": "app_director_overview_video_cover_image",
+          "label": "app_director_overview_video_cover_image",
+          "namespace": ["overview", "app_director_overview_video_cover_image"]
+        },
+        {
+          "type": "string",
+          "name": "app_director_overview_button_text",
+          "label": "app_director_overview_button_text",
+          "namespace": ["overview", "app_director_overview_button_text"]
+        },
+        {
+          "type": "object",
+          "name": "key_feature_section",
+          "label": "key_feature_section",
+          "fields": [
+            {
+              "type": "string",
+              "name": "title",
+              "label": "title",
+              "namespace": ["overview", "key_feature_section", "title"]
+            },
+            {
+              "type": "string",
+              "name": "content",
+              "label": "content",
+              "namespace": ["overview", "key_feature_section", "content"]
+            },
+            {
+              "type": "image",
+              "name": "icon",
+              "label": "icon",
+              "namespace": ["overview", "key_feature_section", "icon"]
+            },
+            {
+              "type": "string",
+              "name": "description",
+              "label": "description",
+              "namespace": ["overview", "key_feature_section", "description"]
+            }
+          ],
+          "namespace": ["overview", "key_feature_section"]
+        },
+        {
+          "type": "string",
+          "name": "app_director_overview_benefits_text",
+          "label": "app_director_overview_benefits_text",
+          "namespace": ["overview", "app_director_overview_benefits_text"]
+        },
+        {
+          "type": "object",
+          "name": "app_director_overview_for_section",
+          "label": "app_director_overview_for_section",
+          "fields": [
+            {
+              "type": "string",
+              "name": "title",
+              "label": "title",
+              "namespace": [
+                "overview",
+                "app_director_overview_for_section",
+                "title"
+              ]
+            },
+            {
+              "type": "string",
+              "name": "reasons",
+              "label": "reasons",
+              "list": true,
+              "fields": [
+                {
+                  "type": "string",
+                  "name": "title",
+                  "label": "title",
+                  "namespace": [
+                    "overview",
+                    "app_director_overview_for_section",
+                    "reasons",
+                    "title"
+                  ]
+                },
+                {
+                  "type": "image",
+                  "name": "icon",
+                  "label": "icon",
+                  "namespace": [
+                    "overview",
+                    "app_director_overview_for_section",
+                    "reasons",
+                    "icon"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "content",
+                  "label": "content",
+                  "ui": { "component": "textarea" },
+                  "namespace": [
+                    "overview",
+                    "app_director_overview_for_section",
+                    "reasons",
+                    "content"
+                  ]
+                }
+              ],
+              "namespace": [
+                "overview",
+                "app_director_overview_for_section",
+                "reasons"
+              ]
+            }
+          ],
+          "namespace": ["overview", "app_director_overview_for_section"]
+        },
+        {
+          "type": "object",
+          "name": "core_feature_section",
+          "label": "core_feature_section",
+          "fields": [
+            {
+              "type": "string",
+              "name": "heading",
+              "label": "heading",
+              "namespace": ["overview", "core_feature_section", "heading"]
+            },
+            {
+              "type": "object",
+              "name": "core_features",
+              "label": "core_features",
+              "list": true,
+              "fields": [
+                {
+                  "type": "string",
+                  "name": "name",
+                  "label": "name",
+                  "namespace": [
+                    "overview",
+                    "core_feature_section",
+                    "core_features",
+                    "name"
+                  ]
+                },
+                {
+                  "type": "string",
+                  "name": "description",
+                  "label": "description",
+                  "namespace": [
+                    "overview",
+                    "core_feature_section",
+                    "core_features",
+                    "description"
+                  ]
+                },
+                {
+                  "type": "image",
+                  "name": "icon",
+                  "label": "icon",
+                  "namespace": [
+                    "overview",
+                    "core_feature_section",
+                    "core_features",
+                    "icon"
+                  ]
+                }
+              ],
+              "namespace": ["overview", "core_feature_section", "core_features"]
+            }
+          ],
+          "namespace": ["overview", "core_feature_section"]
+        },
+        {
+          "type": "image",
+          "name": "bottom_image",
+          "label": "bottom_image",
+          "namespace": ["overview", "bottom_image"]
+        }
+      ],
+      "ui": {},
+      "namespace": ["overview"]
     }
   ],
   "config": {
